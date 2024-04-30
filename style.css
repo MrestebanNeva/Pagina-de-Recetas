@@ -1,0 +1,252 @@
+
+body{
+    background-color: hsl(330, 100%, 98%);
+    font-family: Outfit, Young Serif, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+
+/*section main.........*/
+main{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    padding: 0 34px;
+}
+
+.image-recipe img{
+    width: 100%;
+}
+
+/*section about.........*/
+.about-recipe h1{
+    font-family: Young Serif, sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1;
+    width: 100%;
+}
+
+.about-recipe p	{
+    color: hsl(60, 0%, 48%);
+    font-size: 16px;
+    font-family: Outfit, sans-serif;
+    font-weight: 500;
+}
+
+/*section preparatio.........*/
+.preparation-recipe{
+    background-color: hsl(30, 54%, 90%);
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 0 5% ;
+}
+
+.preparation-recipe h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: hsl(332, 51%, 32%);
+
+}
+
+.preparation-list {
+    list-style: none;
+    padding: 0 10px;
+    color: hsl(60, 0%, 48%);
+    font-weight: 500;
+}
+
+.preparation-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.preparation-item ::before{
+    content: "•";
+    color: hsl(332, 51%, 32%);
+    font-size: 12px;
+    margin-right: 16px;
+}
+
+.preparation-item samp {
+    font-weight: 700;
+    font-size: 16px;
+    color: hsl(0, 1%, 34%)
+}
+
+/*section ingredients.........*/
+.ingredients-recipe {
+    padding-bottom: 5%;
+    border-bottom: solid 3px hsl(0, 9%, 94%);
+}
+
+.ingredients-recipe h2 {
+    font-family: Young Serif, sans-serif;
+    color: hsl(14, 45%, 36%);
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.ingredients-list{
+    list-style: none;
+    padding: 0 10px;
+    color: hsl(60, 0%, 48%);
+    font-weight: 500;
+}
+
+.ingredients-item{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.ingredients-item::before {
+    content: "•";
+    color: hsl(14, 45%, 36%);
+    font-size: 18px;
+    margin-right: 16px;
+}
+
+/*section insructions.........*/
+.instructions-recipe {
+    padding-bottom: 5%;
+    border-bottom: solid 3px hsl(0, 9%, 94%);
+}
+
+.instructions-recipe h2 {
+    font-family: Young Serif, sans-serif;
+    color: hsl(14, 45%, 36%);
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.instrutions-list {
+    list-style: none;
+    padding: 0 10px;
+    color: hsl(60, 0%, 48%);
+    font-weight: 500;
+}
+
+.instrutions-item {
+    margin-bottom: 5px;
+}
+
+.instrutions-item h3 {
+    font-weight: 700;
+    font-size: 16px;
+    color: hsl(0, 1%, 34%);
+    display:contents;
+}
+
+.instrutions-item::before {
+    content: counter(list-item) ". ";
+    color: hsl(14, 45%, 36%);
+    margin-right: 16px;
+}
+
+
+/*section nutrition.........*/
+.nutrition {
+    margin: 5% 0;
+    padding-bottom: 5%;
+}
+
+.nutrition h2 {
+    font-family: Young Serif, sans-serif;
+    color: hsl(14, 45%, 36%);
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.nutrition p {
+    color: hsl(60, 0%, 48%);
+    font-size: 16px;
+    font-family: Outfit, sans-serif;
+    font-weight: 500;
+}
+
+.nutrition-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 10px 5px;
+    color: hsl(60, 0%, 48%);
+    font-weight: 500;
+    border-bottom: solid 3px hsl(0, 9%, 94%);
+}
+
+.nutrition-item {
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+/*section footer.........*/
+.attribution{
+    color: hsl(60, 0%, 48%);
+    font-size: 12px;
+    font-family: Outfit, sans-serif;
+    font-weight: 500;
+    margin: 10px;
+    padding-bottom: 5%;
+}
+
+
+
+/*responsive desktop.........*/
+
+@media (min-width: 1360px) {
+
+    /*section main.........*/
+    main{
+        background-color: hsl(0, 0%, 100%);
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+        margin: 200px 400px;
+        border-radius: 15px;
+        padding: 30px;
+    }
+
+    
+    .image-recipe img{
+        width: 100%;
+        border-radius: 15px;
+        align-self: center;
+        margin: px;
+    }
+
+    /*section about.........*/
+    
+    .about-recipe h1{
+        font-size: 38px;
+    }
+
+    /*section preparation.........*/
+    .preparation-recipe h2 {
+        font-size: 20px;
+    }
+
+    /*section ingredients.........*/
+
+    .ingredients-recipe h2 {
+        font-size: 30px;
+    }
+
+    /*section insructions.........*/
+
+    .instructions-recipe h2 {
+        font-size: 30px;
+    }
+    
+/*section nutrition.........*/
+    .nutrition h2 {
+        font-size: 30px;
+    }
+}
